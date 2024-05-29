@@ -1,0 +1,59 @@
+* {
+  font-family: "Sora", sans-serif !important;
+}
+
+/* Heading */
+h5.h5-bold {
+  color: #18181b;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+/* Button */
+.btn {
+  border-radius: 4px !important;
+  padding: 8px 20px !important;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+/* Navbar */
+.navbar {
+  margin: 24px 80px;
+}
+.navbar .container {
+  padding: 0 32px !important;
+}
+.navbar-brand {
+  margin-right: auto;
+}
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+.navbar .btn-resume {
+  margin-left: auto;
+  color: white;
+  background-color: black;
+}
+
+/* Hero */
+.hero {
+  padding: 60px 80px;
+}
+.hero .container {
+  padding: 0 32px !important;
+}
+.hero .hero-text {
+  font-size: 48px;
+  margin-bottom: 0;
+}
+
+.hero .hero-text .hero-text-bold {
+  font-weight: 800;
+  line-height: 56px;
+}

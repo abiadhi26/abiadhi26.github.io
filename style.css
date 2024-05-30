@@ -76,8 +76,36 @@ h5.h5-bold {
   -webkit-text-stroke: 2px black; /* For WebKit browsers */
   text-stroke: 2px black; /* For browsers that support text-stroke */
 }
-.hero .hero-banner {
+.hero .hero-banner img {
+  width: 70vw;
   position: absolute;
-  right: 0;
   top: 20vh;
+  right: 0;
+}
+
+/* Splash Screen */
+#splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#splash-screen img {
+  width: 50%;
+  animation: zoomInOut 1s infinite alternate;
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.4);
+  }
+}
+#main-content {
+  display: none; /* Hide main content initially */
 }

@@ -16,7 +16,7 @@
     <!-- Splash Screen -->
     <div id="splash-screen">
       <div class="text-center">
-        <img src="logo-aa.png" alt="Logo" class="" />
+        <img src="img/logo-aa.png" alt="Logo" class="" />
         <!-- <p class="">Loading, please wait...</p> -->
       </div>
     </div>
@@ -24,7 +24,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img class="navbar-logo" src="logo-aa.png" alt="logo-aa" />
+            <img class="navbar-logo" src="img/logo-aa.png" alt="logo-aa" />
           </a>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto">
@@ -35,11 +35,14 @@
                 <a class="nav-link" href="#">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Project</a>
+                <a class="nav-link" href="#">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Me</a>
               </li>
             </ul>
           </div>
-          <a class="btn btn-resume" href="#" role="button">Resume</a>
+          <a class="btn btn-resume" href="cv-porto-24-new.pdf" download role="button">Resume</a>
         </div>
       </nav>
 
@@ -71,7 +74,7 @@
           </p>
         </div>
         <div class="hero-banner">
-          <img src="banner-hero.png" alt="banner-hero" />
+          <img src="img/banner-hero.png" alt="banner-hero" />
         </div>
       </div>
 
@@ -79,11 +82,57 @@
         <div class="container">
           <p class="display-text">My <span class="extra-bold">Skills</span></p>
           <div class="row">
-            <div class="col">set</div>
-            <div class="col">set</div>
-            <div class="col">set</div>
-            <div class="col">set</div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img
+                src="img/bootstrap.svg"
+                alt="bootstrap"
+                class="svg-black-white"
+              />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img
+                src="img/tailwindcss.svg"
+                alt="tailwindcss"
+                class="svg-black-white"
+              />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img
+                src="img/javascript.svg"
+                alt="javascript"
+                class="svg-black-white"
+              />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img src="img/vue.svg" alt="vue" class="svg-black-white" />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img src="img/git.svg" alt="git" class="svg-black-white" />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img
+                src="img/flutter.svg"
+                alt="flutter"
+                class="svg-black-white"
+              />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img
+                src="img/figma.svg"
+                alt="figma.svg"
+                class="svg-black-white"
+              />
+            </div>
+            <div class="col col-md-3 d-flex justify-content-center">
+              <img src="img/trello.svg" alt="trello" class="svg-black-white" />
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="myexperience">
+        <div class="container">
+          <p class="display-text">My <span class="extra-bold">Experience</span></p>
         </div>
       </div>
     </div>
@@ -95,6 +144,19 @@
           document.getElementById("splash-screen").style.display = "none";
           document.getElementById("main-content").style.display = "block";
         }, 3000); // 3000 milliseconds = 3 seconds
+      });
+      // Pilih semua elemen dengan kelas 'svg-animate'
+      const svgElements = document.querySelectorAll(".svg-black-white");
+
+      // Iterasi melalui elemen-elemen tersebut dan tambahkan event listener
+      svgElements.forEach(function (element) {
+        element.addEventListener("mouseover", function () {
+          this.classList.add("svg-animate");
+        });
+
+        element.addEventListener("mouseout", function () {
+          this.classList.remove("svg-animate");
+        });
       });
     </script>
     <script
